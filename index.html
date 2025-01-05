@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chatbot JavaScript</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to CSS file -->
+</head>
+<body>
+  <div class="glass">
+    <h1 style="font-family: 'Roboto', sans-serif; font-size: 2rem; font-weight: bold; text-transform: uppercase; text-decoration: underline; margin-bottom: 10px; color: #ffffff;">
+      <u>COLLEGE MANTRA</u>
+    </h1>
+    <p style="font-family: 'Roboto', sans-serif; font-size: 1.2rem; color: #d1f7ff; margin-top: 10px; line-height: 1.5;">
+      Your all-in-one college guide!<br>Explore SRIT Like Never Before!
+    </p>
+
+    <div class="input">
+      <input
+        type="text"
+        id="userBox"
+        onkeydown="if(event.keyCode == 13){ talk() }"
+        placeholder="Type your Question"
+      />
+    </div>
+    <p id="chatLog"></p> <!-- Initially empty chat log -->
+  </div>
+
+  <!-- Circular button for Help -->
+  <a href="help.html" class="help-button">💬</a>
+
+  <script src="script.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

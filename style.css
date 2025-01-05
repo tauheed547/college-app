@@ -1,0 +1,105 @@
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      font-family: sans-serif;
+      background: url("https://wallpaperaccess.com/full/1711834.gif");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      display: flex;
+      align-items: center;
+      justify-content: flex-start; /* Align content to the left */
+      padding-left: 3rem; /* Add padding to the left */
+    }
+
+    .glass {
+      width: 550px;
+      height: 400px;
+      background-color: rgba(173, 216, 230, 0.7);
+      padding: 50px;
+      color: white; /* Black text inside */
+      border-radius: 20px;
+      border: none;
+      box-shadow: 
+        0 0 15px rgba(0, 255, 255, 0.8), /* Neon blue outer shadow */
+        0 0 30px rgba(0, 255, 255, 0.6),
+        0 0 45px rgba(0, 255, 255, 0.4);
+      line-height: 1.5;
+      text-align: center;
+    }
+
+    .glass h1 {
+      font-size: 1.8rem;
+      text-shadow: 0 0 10px rgba(192, 192, 192, 0.7);
+    }
+
+    .input {
+      width: 100%;
+      margin-top: 40px;
+    }
+
+    .input input {
+      width: 100%;
+      height: 55px;
+      border: 2px solid rgba(0, 255, 255, 0.8);
+      background-color: transparent;
+      color: white; /* Black text for the input field */
+      padding-left: 20px;
+      font-family: "Orbitron", sans-serif; /* Robotic font style */
+
+      font-size: 1.5rem;
+      border-radius: 20px;
+      outline: none;
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.8);
+    }
+
+    .input input::placeholder {
+      color: white; /* Blackish placeholder */
+    }
+
+    .glass p {
+      font-size: 1.6rem;
+      margin-top: 30px;
+      color: black;
+    }
+
+    #chatLog {
+      display: none; /* Initially hide the chat log */
+    }
+
+   .help-button {
+     position: fixed; /* Fixed positioning so it stays at the bottom-right of the page */
+     bottom: 20px; /* Position from the bottom */
+     right: 20px; /* Position from the right */
+     font-size: 40px; /* Size of the message emoji */
+     color: rgba(0, 255, 255, 0.8); /* Neon blue color */
+     background: none; /* No background */
+     border: none; /* No border */
+     display: inline-block;
+     text-decoration: none; /* Remove underline */
+     cursor: pointer; /* Pointer cursor on hover */
+     opacity: 0.9; /* Slight transparency */
+     transition: transform 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Smooth hover effect */
+     z-index: 1000; /* Ensure it stays on top of other elements */
+   }
+
+   .help-button::after {
+     content: "?"; /* Add the question mark inside the emoji */
+     position: absolute;
+     top: 18px; /* Adjust this value to control the vertical position of the question mark */
+     left: 23px; /* Adjust this value to control the horizontal position of the question mark */
+     font-size: 18px; /* Size of the question mark */
+     color: black; /* Color of the question mark */
+   }
+
+    .help-button:hover {
+     color: rgba(127, 255, 212, 1); /* Brighter glow on hover */
+     transform: scale(1.2); /* Slight zoom effect on hover */
+     opacity: 1; /* Full opacity on hover */
+   }
